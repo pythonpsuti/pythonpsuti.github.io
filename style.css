@@ -1,0 +1,81 @@
+body {
+    background: #EEE;
+    padding: 0px;
+    margin: 0px;
+}
+
+pre {
+     white-space: pre-wrap;       /* css-3 */
+     white-space: -moz-pre-wrap;  /* Mozilla, с 1999 */
+     white-space: -pre-wrap;      /* Opera 4-6 */
+     white-space: -o-pre-wrap;    /* Opera 7 */
+     word-wrap: break-word;       /* Internet Explorer 5.5+ поддерживается в IE, Safari, и Firefox 3.1.*/
+}
+
+.header {
+    background: #345;
+    align-content: center;
+}
+
+.content {
+
+}
+
+.task {
+    margin: 15px;
+    border: 1px solid #D6D3D3;
+	border-bottom: 2px solid #C4C2C2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+h1 {
+    color: #555;
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+
+h3 {
+    margin: 0px;
+    text-transform: uppercase;
+    color: #1B4;
+    text-shadow: 2px 2px 0px rgba(0, 153, 51, 0.5);
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+
+.tasktext {
+    padding: 0px;
+    margin: 2px;
+    color: #fefefe;
+    text-align: left;
+}
+
+.gray {
+    color: #cecece;
+}
+
+func {
+    color: #95D;
+}
+
+.taskh {
+    background: #345;
+    color: #fefefe;
+    padding: 5px;
+    margin: 0px;
+}
+
+.taskw {
+    background: #ffb;
+    padding: 2px;
+    margin: 0px;
+}
+
+.taskf {
+    background: #fefefe;
+    padding: 5px;
+    margin: 0px;
+    height: auto;
+}

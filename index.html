@@ -1,1 +1,64 @@
-My Page
+<html>
+    <head>
+        <title>PSUTI - Теория и практика (Экзаменационные билеты)</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="jquery-3.3.1.js"></script> 
+        
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="header">
+            <img src="images/logo.png" height="8%">
+        </div>
+        <div class="content">
+            
+            <h1>Решение задач практической части</h1>
+            
+            <script>
+                var taskCount = 2;
+                function addTask(num) {
+                    document.write("<ol id='taskNum"+num+"'></ol>");
+                    $( "#taskNum"+num ).load( "/tasks/"+num+".html" );
+                }
+                for (i = 1; i <= taskCount; i ++)
+                    addTask(i);
+                
+                $(document).ready(function() {
+                  $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                  });
+                });
+                
+                $( document ).ready(function() {
+                    $(document).ready(function() {
+                      $('pre code').each(function(i, block) {
+                        hljs.highlightBlock(block);
+                      });
+                    });
+                });
+            </script>
+
+        </div>
+    </body>
+</html>
+
+<!--
+
+<div class="task">
+    <div class="taskh">
+        <h3>Задание №</h3>
+        <h4> text </h4>
+    </div>
+    <div class="taskf">
+        text
+        <pre><code class="python">
+python code
+        </code></pre>
+    </div>
+</div>
+
+-->
