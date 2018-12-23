@@ -1,0 +1,26 @@
+<div class="task">
+<div class="taskh">
+<h3>Задание №12</h3>
+<pre class="tasktext">Напишите программу, вычисляющую значение функции (на вход подается вещественное число):
+<img src="tasks/12.jpg" width="300px">
+</pre>
+</div>
+<div class="taskf"><pre>
+<b>Краткое описание:</b>
+* Написать метод для определения значения функции
+* Продемонстрировать работу метода
+
+<cf>Код программы:</cf>
+</pre><pre><code class="python">import math
+
+def func(x):
+    if x >= 0.2 and x <= 0.9:
+        return math.sin(x)
+    else:
+        return 1
+
+a = float( input('Введите число: ') )
+print( 'Результат работы функции с данным числом =', func(a) )
+</code></pre>
+</div>
+</div>

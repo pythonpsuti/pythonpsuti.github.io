@@ -52,14 +52,6 @@ h3 {
     text-align: left;
 }
 
-.gray {
-    color: #cecece;
-}
-
-func {
-    color: #95D;
-}
-
 .taskh {
     background: #345;
     color: #fefefe;
@@ -70,6 +62,7 @@ func {
 .taskw {
     background: #ffb;
     padding: 2px;
+    padding-left: 2%;
     margin: 0px;
 }
 
@@ -78,4 +71,18 @@ func {
     padding: 5px;
     margin: 0px;
     height: auto;
+}
+
+cg {
+    color: #cecece;
+}
+
+cf {
+    font-weight: bold;
+    color: #a0a;
+}
+
+cc {
+    font-weight: bold;
+    color: #aaa;
 }

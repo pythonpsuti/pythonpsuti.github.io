@@ -19,10 +19,10 @@
             <h1>Решение задач практической части</h1>
             
             <script>
-                var taskCount = 2;
+                var taskCount = 64;
                 function addTask(num) {
                     document.write("<ol id='taskNum"+num+"'></ol>");
-                    $( "#taskNum"+num ).load( "/tasks/"+num+".html" );
+                    $( "#taskNum"+num ).load( "tasks/"+num+".html" );
                 }
                 for (i = 1; i <= taskCount; i ++)
                     addTask(i);

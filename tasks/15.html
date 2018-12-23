@@ -1,0 +1,31 @@
+<div class="task">
+<div class="taskh">
+<h3>Задание №15</h3>
+<pre class="tasktext">Написать в отдельном модуле функцию, которая на вход принимает два аргумента: строку (s) и целочисленное значение (n). 
+ЕСЛИ длина строки s превышает n символов, ТО функция возвращает строку s в верхнем регистре, ИНАЧЕ возвращается исходная строка s.
+</pre>
+</div>
+<div class="taskf"><pre>
+<b>Краткое описание:</b>
+* Написать функцию в отдельном модуле по заданию
+* Продемонстрировать работу
+
+<cf>Код программы:</cf>
+
+Основной файл <b>zadanie15.py</b>
+</pre><pre><code class="python">import module15
+
+a = input('Введите текст: ')
+b = int( input('Введите число: ') )
+print( module15.test(a, b) )
+</code></pre>
+    
+<pre>Файл модуль <b>module15.py</b>
+</pre><pre><code class="python">def test(msg, n):
+    if len(msg) > n:
+        return msg.upper()
+    else:
+        return msg
+</code></pre>
+</div>
+</div>
