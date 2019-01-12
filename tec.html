@@ -8,10 +8,6 @@
     <body>  
         <h1>Генератор вопросов (Электротехника)</h1>
 
-        <input id="but1" value="Случайные 15 вопросов" onclick="restartWith(false)" type="button"><br>
-        <input id="but2" value="Равномерно 15 вопросов" onclick="restartWith(true)" type="button"><br>
-        <br>
-        
         <script>
             var allList = [
                 'Что называется электрической цепью? ',
@@ -182,10 +178,6 @@
                 'Что собой представляют фазо-частотные искажения?'
             ]
             
-            function restartWith(value) {
-                location.replace('tec.html?gen=' + value.toString());
-            }
-            
             function getRndInt(min, max) {
                 return Math.floor(Math.random() * (max - min + 1) ) + min;
             }
@@ -198,30 +190,13 @@
 
             getFormat = $_GET('gen')
             qlist = []
-            if (getFormat == 'true') {
-                for (i = 0; i < 15; i ++) {
-                    if (i==14) {
-                        qlist.push(getRndInt(i*11, ((i+1)*11)+1 ))
-                    } else {
-                        qlist.push(getRndInt(i*11, ((i+1)*11) ))
-                    }
-                }
-            } else {
-                for (i = 0; i < 15; i ++) {
-                    while (true) {
-                        badQuest = false
-                        newTask = getRndInt(0, allList.length-1)
-                        for (j = 0; i < qlist.length; j ++)
-                            if (newTask == qlist(j)) {
-                                badQuest = true
-                            }
-                        if (badQuest == false) {
-                            break;
-                        }
-                    }
-                    qlist.push(newTask)
-                }
-            }
+            for (i = 0; i < 15; i ++) {
+				if (i==14) {
+					qlist.push(getRndInt(i*11, ((i+1)*11)+1 ))
+				} else {
+					qlist.push(getRndInt(i*11, ((i+1)*11) ))
+				}
+			}
             
             index = 0
             function addTask(num) {
