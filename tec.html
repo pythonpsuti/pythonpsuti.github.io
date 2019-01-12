@@ -191,11 +191,7 @@
             getFormat = $_GET('gen')
             qlist = []
             for (i = 0; i < 15; i ++) {
-				if (i==14) {
-					qlist.push(getRndInt(i*11, ((i+1)*11)+1 ))
-				} else {
-					qlist.push(getRndInt(i*11, ((i+1)*11) ))
-				}
+				qlist.push(getRndInt(i*11, ((i+1)*11) ))
 			}
             
             index = 0
